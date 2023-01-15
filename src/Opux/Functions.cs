@@ -226,96 +226,23 @@ namespace Opux
                             await response.WriteContentAsync("<!doctype html>" +
                                 "<html>" +
                                 "<head>" +
-                                "    <title>Discord Authenticator</title>" +
-                                "    <meta name=\"viewport\" content=\"width=device-width\">" +
-                                "    <link rel=\"stylesheet\" href=\"https://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.css\">" +
-                                "    <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js\"></script>" +
-                                "    <script type=\"text/javascript\" src=\"https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>" +
-                                "    <style type=\"text/css\">" +
-                                "        /* Space out content a bit */" +
-                                "        body {" +
-                                "            padding-top: 20px;" +
-                                "            padding-bottom: 20px;" +
-                                "        }" +
-                                "        /* Everything but the jumbotron gets side spacing for mobile first views */" +
-                                "        .header, .marketing, .footer {" +
-                                "            padding-left: 15px;" +
-                                "            padding-right: 15px;" +
-                                "        }" +
-                                "       /* Custom page header */" +
-                                "        .header {" +
-                                "            border-bottom: 1px solid #e5e5e5;" +
-                                "        }" +
-                                "        /* Make the masthead heading the same height as the navigation */" +
-                                "        .header h3 {" +
-                                "            margin-top: 0;" +
-                                "            margin-bottom: 0;" +
-                                "            line-height: 40px;" +
-                                "            padding-bottom: 19px;" +
-                                "        }" +
-                                "        /* Custom page footer */" +
-                                "        .footer {" +
-                                "            padding-top: 19px;" +
-                                "            color: #777;" +
-                                "            border-top: 1px solid #e5e5e5;" +
-                                "        }" +
-                                "        /* Customize container */" +
-                                "        @media(min-width: 768px) {" +
-                                "            .container {" +
-                                "                max-width: 730px;" +
-                                "            }" +
-                                "        }" +
-                                "        .container-narrow > hr {" +
-                                "            margin: 30px 0;" +
-                                "        }" +
-                                "        /* Main marketing message and sign up button */" +
-                                "        .jumbotron {" +
-                                "            text-align: center;" +
-                                "            border-bottom: 1px solid #e5e5e5;" +
-                                "        }" +
-                                "        .jumbotron .btn {" +
-                                "            font-size: 21px;" +
-                                "            padding: 14px 24px;" +
-                                "            color: #0D191D;" +
-                                "        }" +
-                                "        /* Supporting marketing content */" +
-                                "        .marketing {" +
-                                "            margin: 40px 0;" +
-                                "        }" +
-                                "        .marketing p + h4 {" +
-                                "            margin-top: 28px;" +
-                                "        }" +
-                                "        /* Responsive: Portrait tablets and up */" +
-                                "        @media screen and(min-width: 768px) {" +
-                                "            /* Remove the padding we set earlier */" +
-                                "            .header, .marketing, .footer {" +
-                                "                padding-left: 0;" +
-                                "                padding-right: 0;" +
-                                "            }" +
-                                "            /* Space out the masthead */" +
-                                "            .header {" +
-                                "                margin-bottom: 30px;" +
-                                "            }" +
-                                "            /* Remove the bottom border on the jumbotron for visual effect */" +
-                                "            .jumbotron {" +
-                                "                border-bottom: 0;" +
-                                "            }" +
-                                "        }" +
-                                "    </style>" +
+                                "    <title>21SEP StratsCo Discord Authenticator</title>" +
+                                "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
+                                "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">" +
+                                "    <link rel=\"stylesheet\" href=\"https://strats.co/css/21sep.css\">" +
+                                "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
+                                "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
+                                "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap\">" +
+                                "    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.6.3.min.js\"></script>" +
                                 "</head>" +
-                                "" +
-                                "<body background=\"img/background.jpg\">" +
+                                "<body>" +
                                 "<div class=\"container\">" +
-                                "    <div class=\"header\">" +
-                                "        <ul class=\"nav nav-pills pull-right\"></ul>" +
-                                "    </div>" +
-                                "    <div class=\"jumbotron\">" +
-                                "        <h1>Discord</h1>" +
-                                "        <p class=\"lead\">Click the button below to login with your EVE Online account.</p>" +
+                                "    <div class=\"row\">" +
+                                "        <h1><a href=\"/\">21SEP</a></h1>" +
                                 "        <p><a href=\"https://login.eveonline.com/oauth/authorize?response_type=code&amp;redirect_uri=" + callbackurl + "&amp;client_id=" + client_id + "\"><img src=\"https://web.ccpgamescdn.com/eveonlineassets/developers/eve-sso-login-black-large.png\"/></a></p>" +
                                 "    </div>" +
                                 "</div>" +
-                                "<!-- /container -->" +
+                                "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>" +
                                 "</body>" +
                                 "</html>");
                         }
@@ -463,98 +390,25 @@ namespace Opux
                                         await response.WriteContentAsync("<!doctype html>" +
                                             "<html>" +
                                             "<head>" +
-                                            "    <title>Discord Authenticator</title>" +
-                                            "    <meta name=\"viewport\" content=\"width=device-width\">" +
-                                            "    <link rel=\"stylesheet\" href=\"https://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.css\">" +
-                                            "    <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js\"></script>" +
-                                            "    <script type=\"text/javascript\" src=\"https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>" +
-                                            "    <style type=\"text/css\">" +
-                                            "        /* Space out content a bit */" +
-                                            "        body {" +
-                                            "            padding-top: 20px;" +
-                                            "            padding-bottom: 20px;" +
-                                            "        }" +
-                                            "        /* Everything but the jumbotron gets side spacing for mobile first views */" +
-                                            "        .header, .marketing, .footer {" +
-                                            "            padding-left: 15px;" +
-                                            "            padding-right: 15px;" +
-                                            "        }" +
-                                            "        /* Custom page header */" +
-                                            "        .header {" +
-                                            "            border-bottom: 1px solid #e5e5e5;" +
-                                            "        }" +
-                                            "        /* Make the masthead heading the same height as the navigation */" +
-                                            "        .header h3 {" +
-                                            "            margin-top: 0;" +
-                                            "            margin-bottom: 0;" +
-                                            "            line-height: 40px;" +
-                                            "            padding-bottom: 19px;" +
-                                            "        }" +
-                                            "        /* Custom page footer */" +
-                                            "        .footer {" +
-                                            "            padding-top: 19px;" +
-                                            "            color: #777;" +
-                                            "            border-top: 1px solid #e5e5e5;" +
-                                            "        }" +
-                                            "        /* Customize container */" +
-                                            "        @media(min-width: 768px) {" +
-                                            "            .container {" +
-                                            "                max-width: 730px;" +
-                                            "            }" +
-                                            "        }" +
-                                            "        .container-narrow > hr {" +
-                                            "            margin: 30px 0;" +
-                                            "        }" +
-                                            "        /* Main marketing message and sign up button */" +
-                                            "        .jumbotron {" +
-                                            "            text-align: center;" +
-                                            "            border-bottom: 1px solid #e5e5e5;" +
-                                            "            color: #0D191D;" +
-                                            "        }" +
-                                            "        .jumbotron .btn {" +
-                                            "            font-size: 21px;" +
-                                            "            padding: 14px 24px;" +
-                                            "        }" +
-                                            "        /* Supporting marketing content */" +
-                                            "        .marketing {" +
-                                            "            margin: 40px 0;" +
-                                            "        }" +
-                                            "        .marketing p + h4 {" +
-                                            "            margin-top: 28px;" +
-                                            "        }" +
-                                            "        /* Responsive: Portrait tablets and up */" +
-                                            "        @media screen and(min-width: 768px) {" +
-                                            "            /* Remove the padding we set earlier */" +
-                                            "            .header, .marketing, .footer {" +
-                                            "                padding-left: 0;" +
-                                            "                padding-right: 0;" +
-                                            "            }" +
-                                            "            /* Space out the masthead */" +
-                                            "            .header {" +
-                                            "                margin-bottom: 30px;" +
-                                            "            }" +
-                                            "            /* Remove the bottom border on the jumbotron for visual effect */" +
-                                            "            .jumbotron {" +
-                                            "                border-bottom: 0;" +
-                                            "            }" +
-                                            "        }" +
-                                            "    </style>" +
+                                            "    <title>21SEP StratsCo Discord Authenticator</title>" +
+                                            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://strats.co/css/21sep.css\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
+                                            "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap\">" +
+                                            "    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.6.3.min.js\"></script>" +
                                             "</head>" +
                                             "<body>" +
                                             "<div class=\"container\">" +
-                                            "    <div class=\"header\">" +
-                                            "        <ul class=\"nav nav-pills pull-right\"></ul>" +
-                                            "    </div>" +
-                                            "    <div class=\"jumbotron\">" +
-                                            "        <h1>Discord</h1>" +
-                                            "        <p class=\"lead\">Sign in complete.</p>" +
-                                            "        <p>If you're not already signed into the server use the link below to get invited. (or right click and copy-link for the Windows/OSX Client)</p>" +
-                                            "        <p><a href=\"" + url + "\" target=\"_blank\"><img src=\"data:image/png;base64," + image + "\" width=\"350px\"/></a></p>" +
-                                            "        <p>Once you're in chat copy and paste the entire line below to have the bot add you to the correct roles.</p>" +
-                                            "        <p><b>" + Program.Settings.GetSection("config")["commandprefix"] + "auth " + uid + " </b></p>" +
+                                            "    <div class=\"row\">" +
+                                            "        <h1><a href=\"/\">AUTHENTICATED</a></h1>" +
+                                            "        <p>Paste the command below in <tt>#auth</tt></p>" +
+                                            "        <h2><tt>" + Program.Settings.GetSection("config")["commandprefix"] + "auth " + uid + " </tt></h2>" +
+                                            "        <p><a href=\"https://discord.gg/stratsco\" target=\"_blank\">StratsCo Discord</a></p>" +
                                             "    </div>" +
                                             "</div>" +
-                                            "<!-- /container -->" +
+                                            "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>" +
                                             "</body>" +
                                             "</html>");
                                     }
@@ -569,97 +423,26 @@ namespace Opux
                                         response.Headers.Add("Content-Type", "text/html");
 
                                         await response.WriteContentAsync("<!doctype html>" +
-                                           "<html>" +
-                                           "<head>" +
-                                           "    <title>Discord Authenticator</title>" +
-                                           "    <meta name=\"viewport\" content=\"width=device-width\">" +
-                                           "    <link rel=\"stylesheet\" href=\"https://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.css\">" +
-                                           "    <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js\"></script>" +
-                                           "    <script type=\"text/javascript\" src=\"https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>" +
-                                           "    <style type=\"text/css\">" +
-                                           "        /* Space out content a bit */" +
-                                           "        body {" +
-                                           "            padding-top: 20px;" +
-                                           "            padding-bottom: 20px;" +
-                                           "        }" +
-                                           "        /* Everything but the jumbotron gets side spacing for mobile first views */" +
-                                           "        .header, .marketing, .footer {" +
-                                           "            padding-left: 15px;" +
-                                           "            padding-right: 15px;" +
-                                           "        }" +
-                                           "        /* Custom page header */" +
-                                           "        .header {" +
-                                           "            border-bottom: 1px solid #e5e5e5;" +
-                                           "        }" +
-                                           "        /* Make the masthead heading the same height as the navigation */" +
-                                           "        .header h3 {" +
-                                           "            margin-top: 0;" +
-                                           "            margin-bottom: 0;" +
-                                           "            line-height: 40px;" +
-                                           "            padding-bottom: 19px;" +
-                                           "        }" +
-                                           "        /* Custom page footer */" +
-                                           "        .footer {" +
-                                           "            padding-top: 19px;" +
-                                           "            color: #777;" +
-                                           "            border-top: 1px solid #e5e5e5;" +
-                                           "        }" +
-                                           "        /* Customize container */" +
-                                           "        @media(min-width: 768px) {" +
-                                           "            .container {" +
-                                           "                max-width: 730px;" +
-                                           "            }" +
-                                           "        }" +
-                                           "        .container-narrow > hr {" +
-                                           "            margin: 30px 0;" +
-                                           "        }" +
-                                           "        /* Main marketing message and sign up button */" +
-                                           "        .jumbotron {" +
-                                           "            text-align: center;" +
-                                           "            border-bottom: 1px solid #e5e5e5;" +
-                                           "            color: #0D191D;" +
-                                           "        }" +
-                                           "        .jumbotron .btn {" +
-                                           "            font-size: 21px;" +
-                                           "            padding: 14px 24px;" +
-                                           "        }" +
-                                           "        /* Supporting marketing content */" +
-                                           "        .marketing {" +
-                                           "            margin: 40px 0;" +
-                                           "        }" +
-                                           "        .marketing p + h4 {" +
-                                           "            margin-top: 28px;" +
-                                           "        }" +
-                                           "        /* Responsive: Portrait tablets and up */" +
-                                           "        @media screen and(min-width: 768px) {" +
-                                           "            /* Remove the padding we set earlier */" +
-                                           "            .header, .marketing, .footer {" +
-                                           "                padding-left: 0;" +
-                                           "                padding-right: 0;" +
-                                           "            }" +
-                                           "            /* Space out the masthead */" +
-                                           "            .header {" +
-                                           "                margin-bottom: 30px;" +
-                                           "            }" +
-                                           "            /* Remove the bottom border on the jumbotron for visual effect */" +
-                                           "            .jumbotron {" +
-                                           "                border-bottom: 0;" +
-                                           "            }" +
-                                           "        }" +
-                                           "    </style>" +
-                                           "</head>" +
+                                            "<html>" +
+                                                "<head>" +
+                                            "    <title>21SEP StratsCo Discord Authenticator</title>" +
+                                            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://strats.co/css/21sep.css\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
+                                            "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap\">" +
+                                            "    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.6.3.min.js\"></script>" +
+                                            "</head>" +
                                            "<body>" +
                                            "<div class=\"container\">" +
-                                           "    <div class=\"header\">" +
-                                           "        <ul class=\"nav nav-pills pull-right\"></ul>" +
-                                           "    </div>" +
-                                           "    <div class=\"jumbotron\">" +
-                                           "        <h1>Discord</h1>" +
-                                           "        <p class=\"lead\">Sign in ERROR.</p>" +
+                                           "    <div class=\"row\">" +
+                                           "        <h1><a href=\"/\">ERROR</a></h1>" +
+                                           "        <p>SIGN IN ERROR</p>" +
                                            "        <p>" + message + "</p>" +
                                            "    </div>" +
                                            "</div>" +
-                                           "<!-- /container -->" +
+                                           "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js\"></script>" +
                                            "</body>" +
                                            "</html>");
                                     }
@@ -672,91 +455,20 @@ namespace Opux
                                         await response.WriteContentAsync("<!doctype html>" +
                                            "<html>" +
                                            "<head>" +
-                                           "    <title>Discord Authenticator</title>" +
-                                           "    <meta name=\"viewport\" content=\"width=device-width\">" +
-                                           "    <link rel=\"stylesheet\" href=\"https://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.css\">" +
-                                           "    <script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js\"></script>" +
-                                           "    <script type=\"text/javascript\" src=\"https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>" +
-                                           "    <style type=\"text/css\">" +
-                                           "        /* Space out content a bit */" +
-                                           "        body {" +
-                                           "            padding-top: 20px;" +
-                                           "            padding-bottom: 20px;" +
-                                           "        }" +
-                                           "        /* Everything but the jumbotron gets side spacing for mobile first views */" +
-                                           "        .header, .marketing, .footer {" +
-                                           "            padding-left: 15px;" +
-                                           "            padding-right: 15px;" +
-                                           "        }" +
-                                           "        /* Custom page header */" +
-                                           "        .header {" +
-                                           "            border-bottom: 1px solid #e5e5e5;" +
-                                           "        }" +
-                                           "        /* Make the masthead heading the same height as the navigation */" +
-                                           "        .header h3 {" +
-                                           "            margin-top: 0;" +
-                                           "            margin-bottom: 0;" +
-                                           "            line-height: 40px;" +
-                                           "            padding-bottom: 19px;" +
-                                           "        }" +
-                                           "        /* Custom page footer */" +
-                                           "        .footer {" +
-                                           "            padding-top: 19px;" +
-                                           "            color: #777;" +
-                                           "            border-top: 1px solid #e5e5e5;" +
-                                           "        }" +
-                                           "        /* Customize container */" +
-                                           "        @media(min-width: 768px) {" +
-                                           "            .container {" +
-                                           "                max-width: 730px;" +
-                                           "            }" +
-                                           "        }" +
-                                           "        .container-narrow > hr {" +
-                                           "            margin: 30px 0;" +
-                                           "        }" +
-                                           "        /* Main marketing message and sign up button */" +
-                                           "        .jumbotron {" +
-                                           "            text-align: center;" +
-                                           "            border-bottom: 1px solid #e5e5e5;" +
-                                           "            color: #0D191D;" +
-                                           "        }" +
-                                           "        .jumbotron .btn {" +
-                                           "            font-size: 21px;" +
-                                           "            padding: 14px 24px;" +
-                                           "        }" +
-                                           "        /* Supporting marketing content */" +
-                                           "        .marketing {" +
-                                           "            margin: 40px 0;" +
-                                           "        }" +
-                                           "        .marketing p + h4 {" +
-                                           "            margin-top: 28px;" +
-                                           "        }" +
-                                           "        /* Responsive: Portrait tablets and up */" +
-                                           "        @media screen and(min-width: 768px) {" +
-                                           "            /* Remove the padding we set earlier */" +
-                                           "            .header, .marketing, .footer {" +
-                                           "                padding-left: 0;" +
-                                           "                padding-right: 0;" +
-                                           "            }" +
-                                           "            /* Space out the masthead */" +
-                                           "            .header {" +
-                                           "                margin-bottom: 30px;" +
-                                           "            }" +
-                                           "            /* Remove the bottom border on the jumbotron for visual effect */" +
-                                           "            .jumbotron {" +
-                                           "                border-bottom: 0;" +
-                                           "            }" +
-                                           "        }" +
-                                           "    </style>" +
-                                           "</head>" +
-                                           "<body>" +
-                                           "<div class=\"container\">" +
-                                           "    <div class=\"header\">" +
-                                           "        <ul class=\"nav nav-pills pull-right\"></ul>" +
-                                           "    </div>" +
-                                           "    <div class=\"jumbotron\">" +
-                                           "        <h1>Discord</h1>" +
-                                           "        <p class=\"lead\">Sign in ERROR.</p>" +
+                                            "    <title>21SEP StratsCo Discord Authenticator</title>" +
+                                            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css\">" +
+                                            "    <link rel=\"stylesheet\" href=\"https://strats.co/css/21sep.css\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
+                                            "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
+                                            "    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap\">" +
+                                            "    <script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.6.3.min.js\"></script>" +
+                                            "</head>" +
+                                            "<body>" +
+                                            "<div class=\"container\">" +
+                                            "    <div class=\"row\">" +
+                                            "        <h1><a href=\"/\">ERROR</a></h1>" +
+                                           "        <p>ESI ERROR</p>" +
                                            "        <p>" + message + "</p>" +
                                            "    </div>" +
                                            "</div>" +
